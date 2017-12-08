@@ -29,6 +29,8 @@ if (file_exists($local_settings)) {
  * See: tests/installer-features/installer.feature
  */
 
+/* CI TOKEN: f510a1a570e64a13ee5c83b020583cdc17f4d08d */
+
 $conf['install_profile'] = 'oc';
 
 
@@ -53,7 +55,7 @@ $settings['entity_update_batch_size'] = 50;
 
 // Get Acquia database settings.
 if (file_exists('/var/www/site-php')) {
-  require '/var/www/site-php/testlight4k/testlight4k-settings.inc';
+  require '/var/www/site-php/electriccitizen/electriccitizen-settings.inc';
 }
 
 if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
